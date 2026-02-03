@@ -1,10 +1,14 @@
 // Copyright (c) Microsoft Corporation.
 
-// Export all debugging-related classes and interfaces
+// ===== VALUES (runtime exports) =====
 export { DebugState } from './debugState';
-export { DebuggingExecutor, IDebuggingExecutor } from './debuggingExecutor';
-export { DebugConfigurationManager as ConfigurationManager, IDebugConfigurationManager as IConfigurationManager } from './utils/debugConfigurationManager';
-export { DebuggingHandler, IDebuggingHandler } from './debuggingHandler';
+export { DebuggingExecutor } from './debuggingExecutor';
+export { DebugConfigurationManager as ConfigurationManager } from './utils/debugConfigurationManager';
+export { DebuggingHandler } from './debuggingHandler';
+export { AgentConfigurationManager } from './utils/agentConfigurationManager';
 
-// Export agent configuration classes
-export { AgentConfigurationManager, AgentInfo, MCPServerConfig } from './utils/agentConfigurationManager';
+// ===== TYPES (type-only exports) =====
+export type { IDebuggingExecutor } from './debuggingExecutor';
+export type { IDebugConfigurationManager as IConfigurationManager } from './utils/debugConfigurationManager';
+export type { IDebuggingHandler } from './debuggingHandler';
+export type { AgentInfo, MCPServerConfig } from './utils/agentConfigurationManager';
